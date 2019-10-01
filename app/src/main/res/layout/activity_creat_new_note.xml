@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatNewNote"
+   android:orientation="vertical"
+    >
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:id="@+id/tvtilte"
+    android:background="@drawable/vien"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:text=" Tilte"
+    />
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/vien"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            />
+        <EditText
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remind me at:"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tvdmy"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/vien"
+            android:textSize="22dp"
+            />
+        <TextView
+            android:id="@+id/tvhms"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/vien"
+            android:textSize="22dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="Type: "
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            />
+        <Spinner
+
+            android:id="@+id/tvspinner"
+            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="Tags: "
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+
+            android:id="@+id/tvtags"
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:text="Android, VTC, FPT, Game"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="Weeks: "
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvweeks"
+            android:layout_marginTop="20dp"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:text="Mon Thus, Sat"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btTune"
+        android:layout_marginLeft="20dp"
+        android:text="Tune"
+        />
+
+</LinearLayout>
