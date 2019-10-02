@@ -45,7 +45,7 @@ public class CreatNewNote extends AppCompatActivity {
         btTune=findViewById(R.id.btTune);
         Calendar calendar=Calendar.getInstance();
         // [HCN] calender ngay thang nam
-        SimpleDateFormat dinhdangngay=new SimpleDateFormat("dd/mm/yyyy");
+        SimpleDateFormat dinhdangngay=new SimpleDateFormat("yyyy/MM/dd");
         tvdmy.append(dinhdangngay.format(calendar.getTime()));
         SimpleDateFormat dinhdanggio=new SimpleDateFormat("hh:mm:ss");
         tvhms.append(dinhdanggio.format(calendar.getTime()));
